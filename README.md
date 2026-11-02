@@ -1,4 +1,4 @@
-<img width="1860" height="861" alt="image" src="https://github.com/user-attachments/assets/9e09c412-43d3-4a09-80f6-0890e8a2c5b9" />## timeseries_lab2
+## timeseries_lab2
 * Mục tiêu chính của bài làm là biến đổi bài toán chuỗi thời gian đơn biến thành bài toán **Học có giám sát (Supervised Learning)** thông qua kỹ thuật tạo **Lag Features** (biến độ trễ)[cite: 1]. Mô hình XGBoost sau đó được huấn luyện để dự đoán mức tiêu thụ điện $y_t$ tại thời điểm tiếp theo dựa trên các giá trị lịch sử trong quá khứ ($y_{t-1}, y_{t-2}, \dots, y_{t-p}$)[cite: 1].
 ## Phân công nhiệm vụ nhóm (6 Thành viên)
 
