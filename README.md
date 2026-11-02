@@ -1,4 +1,4 @@
-## timeseries_lab2
+<img width="1860" height="861" alt="image" src="https://github.com/user-attachments/assets/9e09c412-43d3-4a09-80f6-0890e8a2c5b9" />## timeseries_lab2
 * Mục tiêu chính của bài làm là biến đổi bài toán chuỗi thời gian đơn biến thành bài toán **Học có giám sát (Supervised Learning)** thông qua kỹ thuật tạo **Lag Features** (biến độ trễ)[cite: 1]. Mô hình XGBoost sau đó được huấn luyện để dự đoán mức tiêu thụ điện $y_t$ tại thời điểm tiếp theo dựa trên các giá trị lịch sử trong quá khứ ($y_{t-1}, y_{t-2}, \dots, y_{t-p}$)[cite: 1].
 ## Phân công nhiệm vụ nhóm (6 Thành viên)
 
@@ -9,7 +9,7 @@
 | 3 |  |  | Thực hiện Bước 4: Chia tập Train/Test theo chuỗi thời gian | `notebooks/03_time_split.ipynb`<br>`docs/lab03_time_split.md` |
 | 4 |  |  | Thực hiện Bước 5: Fit mô hình XGBoost Regressor | `notebooks/04_xgboost_train.ipynb`<br>`docs/lab04_xgboost_train.md` |
 | 5 |  |  | Thực hiện Bước 6: Dự đoán & Trực quan hóa so sánh Thực tế vs Dự báo | `notebooks/05_evaluation.ipynb`<br>`reports/figures/` |
-| 6 | || Thực hiện Bước 7: Phân tích Feature Importance & Viết báo cáo lý thuyết | `docs/lab05_evaluation.md` |
+| 6 | || Thực hiện Bước 7: Phân tích feature importance để tìm hiểu lag nào ảnh hưởng mạnh nhất đến dự báo | `docs/lab05_evaluation.md` |
 
 ## Cấu trúc thư mục 
 
