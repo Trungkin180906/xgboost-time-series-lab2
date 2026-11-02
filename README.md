@@ -59,6 +59,7 @@ Hệ thống được xây dựng qua quy trình 5 giai đoạn liên kết tu�
 | 5 |  |  | Thực hiện Bước 6: Dự đoán & Trực quan hóa so sánh Thực tế vs Dự báo | `notebooks/05_evaluation.ipynb`<br>`reports/figures/` |
 | 6 | || Thực hiện Bước 7: Phân tích Feature Importance & Viết báo cáo lý thuyết | `docs/lab05_evaluation.md` |
 
+
 ## Cấu trúc thư mục 
 
 ```text
@@ -70,6 +71,8 @@ xgboost-time-series-lab/
 ├── data/
 │   └── raw/                           # Chứa file dữ liệu thô AEP_hourly.csv
 │
+├──models
+│   └── xgboost_model.json
 ├── notebooks/                         # Mã nguồn thực thi Jupyter Notebook
 │   ├── 01_data_prep.ipynb             # Bước 1: Chuẩn bị dữ liệu
 │   ├── 02_lag_features.ipynb          # Bước 2 & 3: Tạo Lag Features & Tách X-y
