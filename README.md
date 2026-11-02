@@ -70,7 +70,16 @@ xgboost-time-series-lab/
 │
 ├── data/
 │   └── raw/                           # Chứa file dữ liệu thô AEP_hourly.csv
-│
+│   │     └── AEP_housely.csv
+│   └── processed/
+│         ├── AEP_clearned.csv
+│         ├── X_lag.csv
+│         ├── y.csv
+│         ├── X_test.csv
+│         ├── X_train.csv
+│         ├── y_test.csv
+│         └── y_train.csv
+│          
 ├──models
 │   └── xgboost_model.json
 ├── notebooks/                         # Mã nguồn thực thi Jupyter Notebook
