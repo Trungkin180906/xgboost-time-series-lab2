@@ -4,6 +4,58 @@
 **Dự án:** Biến đổi chuỗi thời gian đơn biến thành bài toán Học có giám sát (Supervised Learning) ứng dụng thuật toán XGBoost Regressor.
 
 ---
+# Mô tả bộ dữ liệu **AEP Hourly Energy Consumption Dataset**
+
+
+## Xuất xứ
+
+- **Nguồn gốc dữ liệu:** American Electric Power (AEP) – một trong những công ty điện lực lớn nhất tại Hoa Kỳ.
+- **Nguồn tải:** Kaggle.
+
+---
+
+## Thông tin về bộ dữ liệu
+
+Bộ dữ liệu ghi nhận **mức tiêu thụ điện năng theo từng giờ (Hourly Energy Consumption)** trong khu vực do American Electric Power (AEP) quản lý. Đây là dữ liệu chuỗi thời gian (Time Series) thường được sử dụng để nghiên cứu và đánh giá các mô hình dự báo.
+
+---
+
+## Khoảng thời gian thu thập dữ liệu
+
+Dựa trên kết quả phân tích dữ liệu:
+
+- **Thời điểm bắt đầu:** 01/10/2004 01:00
+- **Thời điểm kết thúc:** 03/08/2018 00:00
+
+Như vậy, bộ dữ liệu bao phủ khoảng **14 năm** với tần suất ghi nhận **theo từng giờ**.
+
+---
+
+## Quy mô dữ liệu
+
+- **Số lượng bản ghi ban đầu:** 121.273
+- **Số lượng bản ghi sau khi loại bỏ dữ liệu trùng lặp:** 121.269
+- **Số giá trị bị thiếu (Missing Values):** 0
+- **Số bản ghi trùng lặp được loại bỏ:** 4
+- **Số giờ bị thiếu trong chuỗi thời gian:** 27
+
+---
+
+## Thuộc tính của bộ dữ liệu
+
+Bộ dữ liệu gốc gồm hai thuộc tính chính:
+
+| Thuộc tính | Ý nghĩa |
+|------------|----------|
+| Datetime | Thời gian ghi nhận dữ liệu |
+| AEP_MW | Công suất tiêu thụ điện tại thời điểm tương ứng (MW) |
+
+Trong quá trình tiền xử lý, dữ liệu được mở rộng bằng phương pháp **Lag Features**, tạo ra **24 đặc trưng (lag1 đến lag24)** để biểu diễn giá trị tiêu thụ điện trong 24 giờ trước đó, phục vụ cho mô hình dự báo.
+
+Biến mục tiêu (**Target**) là:
+
+- **y(t):** Giá trị tiêu thụ điện tại thời điểm hiện tại.
+
 
 ### 1. WHAT (bài làm này là gì?)
 - **Bản chất bài toán:** Dự báo phụ tải điện năng theo giờ (*Hourly Energy Consumption Forecasting*) thuộc dạng **chuỗi thời gian đơn biến** (*Univariate Time Series*).
